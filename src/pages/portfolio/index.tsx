@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import ProjectCard from '@/components/cards/project';
 import fetcher from '@/utils/fetcher';
+import Loader from '@/components/loader';
 
 interface Response {
   status?: number,
@@ -27,6 +28,7 @@ export default function Portfolio() {
   const [mobileFilter, setMobileMenu] = useState<boolean>(false)
 
   useEffect(() => {
+    setLoading(true)
     setMobileMenu(false)
     const fetchCategories = () => {
       const config = {
@@ -51,6 +53,7 @@ export default function Portfolio() {
         .then((response: Response) => {
           const { status, data, pagination } = response;
           if (status == 200) {
+            setLoading(false)
             data && setPortfolio(data)
             pagination && setCount(pagination.count)
             pagination && setCurrentPage(pagination.page)
@@ -129,7 +132,7 @@ export default function Portfolio() {
     }
   };
 
-
+  if(loading) return <Loader/>;
   return (
     <>
       <section className="section-size-2">

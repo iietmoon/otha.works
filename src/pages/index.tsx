@@ -6,6 +6,8 @@ import TypingText from "@/components/typingText"
 import ProjectCard from "@/components/cards/project";
 import { clients } from "@/constants/data/clients";
 import fetcher from "@/utils/fetcher";
+import Loader from "@/components/loader";
+import { useRouter } from "next/router";
 
 interface Response{
   status?: number,
@@ -15,9 +17,12 @@ interface Response{
 }
 const Home: React.FC = () => {
   const HeroTexts:string[] = ['developer', 'freelancer', 'ux designer', 'bugs solver', 'coffee lover'];
+  const {pathname} = useRouter();
+  const [loading, setLoading] = useState<boolean>(true)
   const [portfolio, setPortfolio] = useState<any>([]);
 
   useEffect(() => {
+    setLoading(true)
     const fetchData = () => {
       const config = {
         url: '/api/portfolio?limit=3',
@@ -27,15 +32,16 @@ const Home: React.FC = () => {
         .then((response:Response) => {
           const {status, data} = response;
           if(status == 200){
-            console.log(data)
             setPortfolio(data)
+            setLoading(false)
           }
         })
         .catch((error) => console.error(error))
     }
     fetchData();
-  }, [])
+  }, [pathname])
 
+  if(loading) return <Loader/>;
   return (
     <>
       <section className="section-size-1 hero">
