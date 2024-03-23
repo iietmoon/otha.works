@@ -1,4 +1,4 @@
-# Othmane N. - Personal Portfolio with Next.js
+# Othmane N. - Personal Portfolio
 
 Welcome to my portfolio project! This Next.js application showcases my work, skills, and blog posts.
 
@@ -9,7 +9,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
 ```
-   git clone https://github.com/iietmoon/iietmoon.me.git
+   git clone https://github.com/iietmoon/otha.works.git
    cd your-portfolio
 ```
 
@@ -32,8 +32,9 @@ In the project directory, you can run:
 2. npm run build: Builds the app for production.
 3. npm start: Starts the app in production mode.
 
-## 🌐 Portfolio API
-Fetch All Portfolio Items
+## 🌐 Portfolio API 
+Note: using local data, will be planned to use .mdx as data in future.
+Fetch All Portfolio Items 
 ```http
 GET /api/portfolio
 ```
