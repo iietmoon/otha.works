@@ -49,24 +49,7 @@ const Home: React.FC = () => {
           <div className="grid">
             <div className="column-12">
               <h1 className="h1 animated grey-text has-animated">
-                <span>I'm Othmane 👋, a </span>
-                <span className="typed serif black-text"><TypingText texts={HeroTexts} /></span>
-                <br /><span>who crafts exceptional digital experiences.
-                </span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section-size-1 hero-mobile">
-        <div className="container">
-          <div className="grid">
-            <div className="column-12">
-              <h1 className="h1 animated grey-text has-animated">
-                <span>I'm Othmane 👋,<br/> a </span>
-                <span className="typed serif black-text"><TypingText texts={HeroTexts} /></span>
-                <br /><span>who crafts exceptional digital experiences.
-                </span>
+                <span>I'm Othmane 👋, a developer who crafts exceptional tech experiences.</span>
               </h1>
             </div>
           </div>

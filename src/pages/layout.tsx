@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Head from "next/head";
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import Transition from '@/components/transition';
 
 type LayoutProps = {
     children: ReactNode;
@@ -43,8 +44,10 @@ export default function Layout({ children }: LayoutProps) {
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="theme-color" content="#ffffff" />
 
-                {/* Add your other SEO-related meta tags here, if necessary */}
+                {/* CDN or external libraries, if necessary */}
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
             </Head>
+            <Transition></Transition>
             <div className="wrapper">
                 <Header />
                 <div className="content">

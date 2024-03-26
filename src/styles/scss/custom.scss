@@ -31,8 +31,12 @@ html {
         }
 
         .hero {
-            padding-top: 100px;
-            margin-bottom: 150px;
+            min-height: 75vh;
+            //background-color: red;
+            h1{
+                text-align: center;
+                font-size: 75px;
+            }
         }
 
         .hero-mobile {
@@ -386,7 +390,34 @@ html {
             
 
         }
+        ._transition{
+            z-index: 999;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            h6{
+                color: white;
+                .lined{
+                    border-bottom: 1px solid white;
+                }
+            }
+            &.hidden{
+                height: 0vh;
+                h6{
+                    opacity: 0;
 
+                }
+            }
+        }
         @media screen and (max-width: $responsive) {
             .hero {
                 display: none;
