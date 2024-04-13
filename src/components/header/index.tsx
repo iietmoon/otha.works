@@ -13,7 +13,8 @@ export default function Header() {
 
 
   return (
-    <div className={menuIsShown ? "menu-opened" : "menu-closed"}>
+    <div className="container">
+      <div className={menuIsShown ? "menu-opened" : "menu-closed"}>
       <header className="header">
         <Link className="brand smooth" href="/">
           <Image className="default" alt="Othmane N. logo image" src="/logo.png" width={1000} height={551} />
@@ -30,6 +31,9 @@ export default function Header() {
             <Link className="menu-link smooth" href="/portfolio">Portfolio</Link>
           </li>
           <li className="menu-item has-dropdown">
+            <Link className="menu-link smooth" href="/explained">Explained 🔥</Link>
+          </li>
+          <li className="menu-item has-dropdown">
             <Link className="menu-link smooth" href="/blog">Blog</Link>
           </li>
           <li className="menu-item has-dropdown">
@@ -39,7 +43,7 @@ export default function Header() {
         <div className="menu about">
           <p>My goal is to make the digital world more beautiful. I believe that true craftmanship stands out with passion.</p>
         </div>
-        <ul className="menu social">
+        <ul className="menu social hidden">
           <li className="menu-item"><Link className="menu-link anchor-link" href="https://www.linkedin.com/in/iietmoon/" target="_blank">LinkedIn</Link></li>
           <li className="menu-item"><Link className="menu-link anchor-link" href="https://github.com/iietmoon" target="_blank">Github</Link></li>
           <li className="menu-item"><Link className="menu-link anchor-link" href="https://www.behance.net/othmane-nejdi/projects" target="_blank">Behance</Link></li>
@@ -50,6 +54,7 @@ export default function Header() {
         <hr />
         <hr />
       </div>
+    </div>
     </div>
   )
 }

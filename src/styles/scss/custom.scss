@@ -15,9 +15,19 @@ $responsive: 1024px;
 
 html {
     body {
+        .wrapper{
+            padding-top: 0 !important;
+        }
+        .hidden{
+            display: none;
+        }
         header {
             background-color: #ffffff;
-
+            
+            &.header{
+                box-shadow: none;
+                position: unset;
+            }
             a.brand {
                 img {
                     width: 75px;
@@ -31,12 +41,23 @@ html {
         }
 
         .hero {
-            min-height: 75vh;
-            //background-color: red;
-            h1{
-                text-align: center;
-                font-size: 75px;
+            padding: 175px 0;
+            .container{
+                .grid{
+                    h1.h1{
+                        text-align: center;
+                        font-size: 60px;
+                        text-align: left;
+                        word-spacing: 5px;
+                        span{
+                            span.underlined{
+                                border-bottom: 3px solid black;
+                            }
+                        }
+                    }
+                }
             }
+            
         }
 
         .hero-mobile {
@@ -125,9 +146,16 @@ html {
         }
 
         .about-hero-section {
+            padding-top: 0 !important;
             img {
-                width: 100%;
-                height: 100%;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                border-radius: 150px;
+            }
+            h1{
+                font-size: 35px;
+                word-spacing: 5px;
             }
 
         }

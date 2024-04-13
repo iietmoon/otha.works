@@ -5,14 +5,12 @@ export default function About() {
             <section className="section-size-2 about-hero-section">
                 <div className="container">
                     <div className="grid center text-center">
-                        <div className="column-6">
+                        <div className="column-7">
                             <div className="image pad-3">
                                 <Image alt="Nevo example image" src="/othmane-n.png" width={1000} height={1000} />
                             </div>
-                        </div>
-                        <div className="column-6 pad-3">
-                            <h1>Othmane N.</h1>
-                            <h4>Code & UX Thinker</h4>
+                            <h3>I&apos;m Othmane, a senior developer</h3>
+                            <p className="animate__animated animate__fadeIn">Passionate about blending code with creativity, I specialize in crafting seamless digital experiences that captivate users. With expertise in both development and UX design, I strive to deliver innovative solutions that resonate and inspire.</p>
                             <a className="button default anchor-link" href="#buttons">Download my resume</a>
                         </div>
                     </div>
@@ -20,8 +18,8 @@ export default function About() {
             </section>
             <section className="section-size-2">
                 <div className="container">
-                    <div className="space-4 width-3 centered">
-                        <h3>Bio</h3>
+                    <div className="space-4 width-4 centered">
+                        <h3>The Story of my technologies</h3>
                         <p>I'm Othmane N., a Senior Fullstack developer based in Casablanca, Morocco 🇲🇦. With a wealth of experience and a passion for technology, I take immense pride in crafting exceptional digital experiences that have a lasting impact. Throughout my career, I've been fortunate to work on a diverse array of exciting projects, each presenting unique challenges and opportunities.</p>
                         <p><strong>👨‍💻 Programming Languages:</strong> I'm well-versed in a variety of programming languages, including JavaScript, TypeScript, Python, and I'm currently exploring Rust.</p>
                         <p><strong>🚀 Frontend:</strong> My expertise in frontend development spans across a range of frameworks and technologies, such as React, Vue, Vuex, JavaScript, TypeScript, Next.js, Nuxt.js, and Gatsby.js. I'm committed to creating seamless user experiences.</p>

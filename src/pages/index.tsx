@@ -8,6 +8,7 @@ import { clients } from "@/constants/data/clients";
 import fetcher from "@/utils/fetcher";
 import Loader from "@/components/loader";
 import { useRouter } from "next/router";
+import Hero from "@/components/hero";
 
 interface Response{
   status?: number,
@@ -44,17 +45,7 @@ const Home: React.FC = () => {
   if(loading) return <Loader/>;
   return (
     <>
-      <section className="section-size-1 hero">
-        <div className="container">
-          <div className="grid">
-            <div className="column-12">
-              <h1 className="h1 animated grey-text has-animated">
-                <span>I'm Othmane 👋, a developer who crafts exceptional tech experiences.</span>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero></Hero>
       <section className="section-size-3 lighter-bg services-section">
         <div className="container">
           <div className="grid">
