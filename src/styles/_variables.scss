@@ -6,42 +6,34 @@
    ==========================================
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
-$primary-color: #FFC41D;
-$secondary-color: #307F80;
-$alternative-color: #AF492C;
+$primary-color: #000000;
+$secondary-color: #DEDBD8;
 
-$dark-color: #0E0805;
-$light-color: #DEDBD8;
+$dark-color: $primary-color;
+$light-color: #848484;
 
 $success-color: #39A762;
 $danger-color: #dc2f20;
 
-$font-saturday: 'Saturday',
+$font: 'Montserrat',
 sans-serif;
-$font-akkurat-regular: 'Akkurat-Regular',
-sans-serif;
-$font-akkurat-bold: 'Akkurat-Bold',
-sans-serif;
-$font-mirage-regular: 'Mirage-Regular',
-serif;
-$font-mirage-medium: 'Mirage-medium',
-serif;
 
-$base-font-size: 18px;
-$large-font-size: 3.5rem;
-$heading-1: 2.5em;
-$heading-2: 2em;
-$heading-3: 1.8em;
-$paragraph: 1.1em;
+$base-font-size: 15px;
+$heading-1: 26px;
+$heading-2: 22px;
+$heading-3: 18px;
+$paragraph: $base-font-size;
 
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 600;
 
 $base-spacing-unit: 10px;
 
@@ -51,7 +43,8 @@ $padding-top-unit: $base-spacing-unit * 2;
 
 $border-radius: 0px;
 $border-width: 1px;
-$border-color: $dark-color;
+$border-dark: $border-width solid $dark-color;
+$border-light: $border-width solid $light-color;
 
 $transition-speedy: 0.5s;
 $transition-medium: 1s;

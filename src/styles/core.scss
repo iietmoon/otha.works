@@ -44,34 +44,47 @@
   h5,
   h6 {
       font-size: $base-font-size;
-      font-family: $font-mirage-regular;
+      font-family: $font;
+      text-decoration: none !important;
   }
 
   h1 {
       font-size: $heading-1;
-      font-family: $font-akkurat-bold;
+      font-family: $font;
   }
 
   h2 {
       font-size: $heading-2;
-      font-family: $font-akkurat-bold;
+      font-family: $font;
   }
 
   h3 {
       font-size: $heading-3;
-      font-family: $font-akkurat-bold;
+      font-family: $font;
   }
-}
-*{
-    border: 1px solid red;
+  p, a{
+    color: $light-color !important;
+  }
 }
 html{
     body{
+        @media screen and (max-width: $breakpoint-md) {
+            .main-container{
+                width: 100% !important;
+            }
+        }
         header{
+            padding: $base-spacing-unit*2 0;
+            margin-bottom: $base-spacing-unit*2;
+            border-bottom: $border-light;
+            
             img.logo{
                 width: 75px;
                 height: auto;
                 aspect-ratio: auto;
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 55px; 
+                }
             }
             ul{
                 margin: 0;
@@ -81,7 +94,59 @@ html{
                     list-style: none;
                     margin-left: 15px;
                     a{
-
+                        font-weight: 500;
+                    }
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                    background-color: white;
+                    position: absolute;
+                    width: 100%;
+                    right: 0;
+                    left: 0;
+                    top: 75px;
+                    border-bottom: $border-light;
+                    li{
+                        display: block;
+                        padding: $base-spacing-unit*1.5 0;
+                        a{
+                            font-size: $heading-2;
+                        }
+                    }
+                 }
+            }
+            .menu-icon{
+                display: none;
+                span{
+                    display: block;
+                    background-color: $primary-color;
+                    width: $base-spacing-unit * 3;
+                    height: 4px;
+                    margin: 2px;
+                    cursor: pointer;
+                }
+                @media screen and (max-width: $breakpoint-md) {
+                   display: flex;
+                   flex-direction: column;   
+                }
+            }
+            
+        }
+        footer{
+            padding: $base-spacing-unit*2 0;
+            margin-top: $base-spacing-unit*2;
+            border-top: $border-light;
+            p{
+                margin-bottom: 0;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    margin-left: 15px;
+                    a{
+                        font-weight: 500;
                     }
                 }
             }

@@ -31,9 +31,9 @@ const Header: React.FC = () => {
     ]
     return (
         <header>
-            <div className="container">
+            <div className="container p-0">
                 <div className="row">
-                    <div className="col-2 bg-danger">
+                    <div className="col-2">
                         <Link href="/">
                             <Image className="logo" src="/logo.png" width={1001} height={552} alt='Othmane N. Logo' />
                         </Link>
@@ -48,7 +48,12 @@ const Header: React.FC = () => {
                                 ))
                             }
                         </ul>
+                        <div className="menu-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </header>
