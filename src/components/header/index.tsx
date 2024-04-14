@@ -17,8 +17,8 @@ const Header: React.FC = () => {
             path: '/about'
         },
         {
-            title: 'Works',
-            path: '/works'
+            title: 'Porfolio',
+            path: '/portfolio'
         },
         {
             title: 'Blog',
@@ -46,7 +46,11 @@ const Header: React.FC = () => {
                                         <Link href={item?.path}>{item?.title}</Link>
                                     </li>
                                 ))
+
                             }
+                            <li>
+                                <Link href="/contact" className='btn btn-primary ms-3'>Let&apos;s Talk </Link>
+                            </li>
                         </ul>
                         <div className="menu-icon">
                             <span></span>

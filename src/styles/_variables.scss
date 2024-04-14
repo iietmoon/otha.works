@@ -14,7 +14,8 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 $primary-color: #000000;
-$secondary-color: #DEDBD8;
+$secondary-color: #ffffff;
+$third-color: #f9f9f9;
 
 $dark-color: $primary-color;
 $light-color: #848484;
@@ -41,7 +42,8 @@ $margin-top-unit: $base-spacing-unit;
 $padding-bottom-unit: $base-spacing-unit * 2;
 $padding-top-unit: $base-spacing-unit * 2;
 
-$border-radius: 0px;
+$border-radius-sm: 2px;
+$border-radius-md: 8px;
 $border-width: 1px;
 $border-dark: $border-width solid $dark-color;
 $border-light: $border-width solid $light-color;

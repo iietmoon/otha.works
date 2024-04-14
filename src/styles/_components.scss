@@ -5,3 +5,16 @@
    Github: https://github.com/othastudio
    ==========================================
 */
+button.btn-primary,
+a.btn-primary{
+   background-color: $primary-color !important;
+   border-radius: $border-radius-sm !important;
+   color: $secondary-color !important;
+   border-color: transparent !important;
+   &:hover{
+      background-color: transparent !important;
+      border-radius: $border-radius-sm !important;
+      color: $primary-color !important;
+      border-color: $primary-color !important;
+   }
+}
