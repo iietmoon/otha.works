@@ -1,0 +1,90 @@
+/* ==========================================
+   This file contains global styling rules that are applied throughout the application.
+
+   Author: Othmane N. | Senior Developer
+   Github: https://github.com/othastudio
+   ==========================================
+*/
+
+@import "variables";
+@import "globals";
+@import "components";
+@import "loader";
+
+* {
+  /* ux rasor */
+  //border: 1px solid red;
+  /* End: ux rasor */
+  outline: none !important;
+  outline-color: $primary-color !important;
+  box-shadow: none !important;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a {
+      color: $dark-color;
+  }
+
+  a {
+      &:hover {
+          color: $dark-color;
+          opacity: 0.5;
+          transition: $transition-speedy;
+      }
+  }
+
+  p,
+  a,
+  h4,
+  h5,
+  h6 {
+      font-size: $base-font-size;
+      font-family: $font-mirage-regular;
+  }
+
+  h1 {
+      font-size: $heading-1;
+      font-family: $font-akkurat-bold;
+  }
+
+  h2 {
+      font-size: $heading-2;
+      font-family: $font-akkurat-bold;
+  }
+
+  h3 {
+      font-size: $heading-3;
+      font-family: $font-akkurat-bold;
+  }
+}
+*{
+    border: 1px solid red;
+}
+html{
+    body{
+        header{
+            img.logo{
+                width: 75px;
+                height: auto;
+                aspect-ratio: auto;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    margin-left: 15px;
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+}
