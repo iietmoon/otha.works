@@ -70,7 +70,7 @@ const Article: React.FC = () => {
             <section className="section-size-2 single-blog-section">
                 <div className="container">
                     <div className="grid center text-center">
-                        <div className="column-6">
+                        <div className="column-7">
                             <h1>{article.title}</h1>
                             <Profile/>
                             <div className="space-3"></div>
@@ -83,7 +83,7 @@ const Article: React.FC = () => {
             </section>
             <section className="section-size-2 single-blog-section content">
                 <div className="container">
-                    <div className="space-4 width-3 centered">
+                    <div className="space-4 width-4 centered">
                         <HtmlRenderer content={article.content} />
                         <ShareButtons title={article.title} url={article.slug} />
                     </div>

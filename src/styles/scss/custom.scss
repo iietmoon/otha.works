@@ -23,7 +23,6 @@ html {
         }
         header {
             background-color: #ffffff;
-            
             &.header{
                 box-shadow: none;
                 position: unset;
@@ -41,15 +40,21 @@ html {
         }
 
         .hero {
-            padding: 175px 0;
+            //padding: 275px 0;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             .container{
                 .grid{
+                    justify-content: center;
                     h1.h1{
                         text-align: center;
                         font-size: 60px;
-                        text-align: left;
                         word-spacing: 5px;
                         span{
+                            text-align: center;
                             span.underlined{
                                 border-bottom: 3px solid black;
                             }
@@ -61,7 +66,7 @@ html {
         }
 
         .hero-mobile {
-            display: none;
+            //display: none;
         }
 
         .services-section {
@@ -89,7 +94,7 @@ html {
                     }
 
                     p {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -277,10 +282,12 @@ html {
         .single-blog-section {
             padding-bottom: 0 !important;
 
-            h1 {
-                font-size: 55px !important;
+            h1{
                 text-align: left;
-                line-height: 65px;
+                font-size: 40px;
+                word-spacing: 0px;
+                letter-spacing: -2px;
+                line-height: 50px;
             }
 
             &.content {
@@ -333,7 +340,7 @@ html {
 
             p {
                 margin: 0 !important;
-                font-size: 18px;
+                font-size: 16px;
                 opacity: 0.7;
             }
 
@@ -348,11 +355,11 @@ html {
         }
 
         .thumb p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .thumb:hover p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .notfound {
