@@ -455,18 +455,32 @@ html {
         }
         @media screen and (max-width: $responsive) {
             .hero {
-                display: none;
-                padding-top: 100px;
-                margin-bottom: 150px;
-            }
-
-            .hero-mobile {
-                display: inherit;
-                padding: 100px 0;
-
-                h1 {
-                    font-size: 35px;
+                //padding: 275px 0;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .container{
+                    .grid{
+                        justify-content: center;
+                        h1.h1{
+                            text-align: center;
+                            font-size: 30px;
+                            word-spacing: 5px;
+                            span{
+                                text-align: center;
+                                span.underlined{
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                        p{
+                            font-size: 16px
+                        }
+                    }
                 }
+                
             }
 
             .menu-opened {
@@ -576,7 +590,7 @@ html {
                         pointer-events: none;
 
                         img {
-                            height: 350px;
+                            height: 315px;
                         }
 
                         .labels,
@@ -592,7 +606,7 @@ html {
                     pointer-events: none;
 
                     img {
-                        height: 350px;
+                        height: 315px;
                     }
 
                     .labels,
