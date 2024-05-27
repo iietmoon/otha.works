@@ -1,5 +1,18 @@
 [
   {
+    "id": "cG9zdDozNTQ1",
+    "title": "Discover the Future of React with Next.js 15 RC: Key Highlights and Innovations",
+    "slug": "next-15-rc",
+    "excerpt": "Explore the dynamic world of User Experience (UX) design in the digital age. Discover how technology is transforming UX, driving innovation, and shaping the future of design.",
+    "content": "\n<p>Next.js, the leading React framework, has just released its 15th version as a Release Candidate (RC), packed with innovative features designed to enhance developer experience and application performance.<h2>What's New in Next.js 15 RC?</h2><h3>1. React 19 RC Support</h3><p>Next.js 15 RC is fully compatible with React 19 RC, including an experimental React Compiler. This integration ensures developers can leverage the latest React features, pushing the boundaries of what's possible with modern web applications.<h3>2. Advanced Caching Mechanisms</h3><p>Significant changes to caching include default uncaching of fetch requests, `GET` Route Handlers, and client navigations. These adjustments give developers more control over caching strategies, enhancing application performance and reliability.<h3>3. Partial Prerendering (Experimental)</h3><p>This new feature allows for incremental static and dynamic rendering, optimizing the loading of dynamic content. Partial Prerendering ensures faster initial loads and improved user experience for content-rich applications.<h3>4. next/after API (Experimental)</h3><p>The introduction of the `next/after` API allows post-response code execution, providing greater flexibility in handling requests and responses. This feature is particularly useful for tasks that need to be executed after the initial response is sent to the client.<h3>5. Enhanced create-next-app</h3><p>The create-next-app tool now boasts a redesigned interface and a Turbopack flag, offering faster build times and an improved setup process. These enhancements streamline the development workflow, making it easier than ever to get started with Next.js.<h3>6. Optimized Bundling</h3><p>Improvements in the bundling process reduce the size of external packages, leading to faster load times and better performance. This optimization is crucial for applications that rely on multiple third-party libraries.<p>Next.js 15 RC is a significant step forward in web development, offering powerful new tools and enhancements that cater to both performance and developer experience. Whether you're building a small project or a large-scale application, the features introduced in this release candidate are sure to make your development process smoother and more efficient.<p>For a deeper dive into Next.js 15 RC and to stay updated with the latest features, visit the official <a href=https://nextjs.org/blog/next-15-rc>Next.js blog post</a>.\n",
+    "featuredImage": "/images/nextjs-rc.png",
+    "terms": [
+      "Next.js",
+      "Software Development",
+      "Product development"
+    ]
+  },
+  {
     "id": "cG9zdDozNTQ0",
     "title": "Evolving the UX: How Technology is Redefining Design for Tomorrow",
     "slug": "evolving-the-user-experience-how-technology-is-redefining-design-for-tomorrow",
